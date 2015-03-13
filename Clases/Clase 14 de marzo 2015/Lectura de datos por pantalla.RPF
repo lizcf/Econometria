@@ -1,0 +1,34 @@
+***********************************
+**                               **
+** Lectura de datos por pantalla **
+**                               **
+***********************************
+
+* 1. Si se tienen los datos en Excel:
+
+
+** a. Ejemplo 1
+
+DECLARE RECT MAT3(3,2)
+INPUT MAT3
+1.5	3.2
+2.3	5.6
+6.5	7.4
+Wri mat3
+
+** b. Ejemplo 2
+
+DECLARE RECT M4(3,2)
+READ(UNIT=INPUT) M4
+1.5	3.2
+2.3	5.6
+6.5	7.4
+WRI M4
+
+* 2. Lectura de datos desde Archivos tipo .txt o .prn (READ)
+
+DEC RECT DATAVEC(2,3)
+OPEN DATA C:\...\Datos.txt
+READ(UNIT=DATA) DATAVEC
+* Los datos son leidos y almacenados en DATAVEC
+wri datavec

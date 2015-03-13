@@ -1,0 +1,14 @@
+*
+*
+*
+open data ex32.xls
+calendar(q) 1954:1
+data(format=xls,org=columns) 1954:1 1995:2 gc gyd
+*
+* La regresión tiene que abarcar el periodo 1959Q1 hasta el final de la serie.
+* La forma más sencilla de hacer esto es udilizar los parámetros <start> y <end>
+* en la instrucción LINREG.
+
+linreg gc 1959:1 *
+# constant gyd
+
