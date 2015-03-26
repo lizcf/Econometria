@@ -1,0 +1,41 @@
+---
+output: html_document
+---
+Ejercicio. Encuesta ENIGH-2010. Instrucciones
+========================================================
+
+Para este ejercicio se tomarán datos de la ENIGH-201 contenidos en el archivo la enigh_2010.dta
+
+a) Exporta la base de datos enigh_2010.dta a R.
+
+b) Genera una variable que identifique las Entidades Federativas (sustrae los primeros dos dígitos de la variable ubica_geo) de cada una de las viviendas en donde se levantó la ENIGH-2010, llámala estados. 
+
+c) Transforma la nueva variable estados en una variable numérica.
+
+d) Genera una nueva variable llamada regiones con base en la clasificación de INEGI http://www.economia.com.mx/regiones_socioeconomicas_de_mexico.htm 
+
+* Muy bajo: 7, 12, 20
+* Bajo: 4, 13, 21, 24, 27, 30
+* Medio bajo: 10, 11, 16, 29, 32
+* Medio: 6, 15, 17, 18, 22, 23, 25, 31
+* Medio alto: 2, 3, 8, 26, 28
+* Alto: 1, 5, 14, 19
+* Muy alto: 9
+
+e) Recodifica la variable de estados en solamente tres grupos socioeconómicos: 
+* Alto: alto y muy alto
+* Medio: medio bajo, medio y medio alto
+* Bajo: muy bajo y bajo
+
+Transforma la variable como una variable factor e incluye esta variable en la base de datos.
+
+f) Obten una tabla de frecuencia y de estadísticos de resumen de las variables de ingresos por sexo. Transforma los valores 999999 a valores perdidos (NA), si es el caso. 
+
+g) Realiza el tabulado anterior para las mismas variables tomándolas como cualitativas.
+
+h) Elabora una gráfica de pie que represente la distribución de viviendas encuestada por la ENIGH-2010 por región socioeconómica (Alta, media y baja) y guardala en formato jpg.
+
+
+i) Realiza una gráfica de densidad que represente la distribución del ingreso corriente de las viviendas encuestadas por la ENIGH-2010. 
+
+j) Realiza una gráfica de caja con la distribución de ingresos, por región socioeconómica que se diferencie por zonas socioeconómicas (alta, media, baja) del ingreso corriente de la vivienda encuestada por la ENIGH-2010.
